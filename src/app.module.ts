@@ -7,6 +7,7 @@ import { ProjectModule } from './domain/module/project.module';
 import { AboutModule } from './domain/module/about.module';
 import { ClientModule } from './domain/module/client.module';
 import { ContactModule } from './domain/module/contact.module';
+import { ResumeModule } from './domain/module/resume.module';
 import { AppLogger } from './infrastructure/logger/logger';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -20,6 +21,7 @@ import { AppService } from './app.service';
     AboutModule,
     ClientModule,
     ContactModule,
+    ResumeModule,
   ],
   controllers: [AppController],
   providers: [AppService, AppLogger],
