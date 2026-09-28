@@ -1,0 +1,9 @@
+// Service tokens
+export const IPROJECT_SERV_TOKEN = 'IPROJECT_SERV_TOKEN';
+export const IABOUT_SERV_TOKEN = 'IABOUT_SERV_TOKEN';
+export const ICLIENT_SERV_TOKEN = 'ICLIENT_SERV_TOKEN';
+export const ICONTACT_SERV_TOKEN = 'ICONTACT_SERV_TOKEN';
+export const ICLOUDINARY_SERV_TOKEN = 'ICLOUDINARY_SERV_TOKEN';
+
+// Cloudinary
+export const CLOUDINARY_FOLDER = 'fakelos';
