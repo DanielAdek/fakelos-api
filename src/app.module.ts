@@ -8,6 +8,7 @@ import { AboutModule } from './domain/module/about.module';
 import { ClientModule } from './domain/module/client.module';
 import { ContactModule } from './domain/module/contact.module';
 import { ResumeModule } from './domain/module/resume.module';
+import { CoverLetterModule } from './domain/module/cover-letter.module';
 import { AppLogger } from './infrastructure/logger/logger';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -22,6 +23,7 @@ import { AppService } from './app.service';
     ClientModule,
     ContactModule,
     ResumeModule,
+    CoverLetterModule,
   ],
   controllers: [AppController],
   providers: [AppService, AppLogger],
