@@ -42,9 +42,14 @@ export class CloudinaryService {
         {
           folder: CLOUDINARY_FOLDER,
           resource_type: 'raw',
+          flags: 'attachment:false',
         },
         (error, result) => {
           if (error) return reject(error);
+          // Replace /upload/ with /upload/fl_inline/ so the PDF renders in-browser
+          if (result && result.secure_url) {
+            result.secure_url = result.secure_url.replace('/upload/', '/upload/fl_inline/');
+          }
           resolve(result!);
         },
       );
